@@ -10,3 +10,8 @@
 6. Create model files
 7. Install express and mongoose
 8. Create a start script and dev script in `package.json` using nodemon & run `npm run dev/start`
+
+## Creation of database connection
+
+1. It can always fail - use try-catch
+2. It is always in a different continent - use async-await
