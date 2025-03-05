@@ -15,3 +15,8 @@
 
 1. It can always fail - use try-catch
 2. It is always in a different continent - use async-await
+
+## Asynchronous handler
+
+- Async requests may fail. Instead of repeatedly using try/catch, use higher order function
+- Put in utils
