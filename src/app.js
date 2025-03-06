@@ -19,4 +19,11 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 // static files come from the public folder
 app.use(express.static("public"));
 
+// import routes
+import healthcheckRouter from "./routes/healthcheck.routes.js";
+
+// all routes
+
+app.use("/api/v1/healthcheck", healthcheckRouter);
+
 export { app };
