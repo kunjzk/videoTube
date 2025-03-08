@@ -55,3 +55,11 @@ ERD we want to model:
 
 - Refresh tokens: JWTs. https://jwt.io
   - JWT library: https://www.npmjs.com/package/jsonwebtoken
+  - JWT is used to authenticate the user. We can put any data in it that we like. It will expire after a fixed duration, which we can control. We also need to sign it with a secret that we own, so that when the user sends it back to us, we are sure that we created it and not someone else.
+
+## File handling
+
+- Handle cookies using `cookie-parser` library
+- Handle files with `multer` library
+- Create multer middleware that saves uploaded files to disk: https://www.npmjs.com/package/multer#multeropts
+- Create a utility function that uploads images to cloudinary and deletes the local file
