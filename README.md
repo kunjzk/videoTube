@@ -40,3 +40,18 @@ Better way: create a healthcheck controller at `healthcheck.controllers.js`. Che
 
 ERD we want to model:
 ![ERD local image](public/db_model.png)
+
+## Mongoose middleware
+
+- Can specify prehooks and posthooks
+
+  - prehooks is before you save to DB
+  - posthooks is after save to DB
+
+- Methods
+
+  - Can add methods to the schema that can be called with `schema.method()`
+  - Compare if a new password is the same as the existing one: https://www.npmjs.com/package/bcrypt
+
+- Refresh tokens: JWTs. https://jwt.io
+  - JWT library: https://www.npmjs.com/package/jsonwebtoken
