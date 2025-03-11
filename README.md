@@ -63,3 +63,9 @@ ERD we want to model:
 - Handle files with `multer` library
 - Create multer middleware that saves uploaded files to disk: https://www.npmjs.com/package/multer#multeropts
 - Create a utility function that uploads images to cloudinary and deletes the local file
+
+## User Registration
+
+- Note end to end flow
+- Function definitions
+- Export types
