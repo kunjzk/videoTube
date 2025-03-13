@@ -69,3 +69,11 @@ ERD we want to model:
 - Note end to end flow
 - Function definitions
 - Export types
+
+- Access and refresh tokens:
+  - Access token is used by the user to access the server. It has a short lived validity, eg 15 min
+  - Access token is attached to every request to the server
+  - Once 15 min are up, the access token is no longer valid. Server returns a 401.
+  - User is redirected to a new endpoint to refresh the token. User supplies the refresh token here.
+  - If we want to contnue to grant them access, we refresh the access token and provide a new refresh token too. The refresh token is stored in the database, and used to match against an incoming refresh token.
+  - If we dont want to grant them access any more, we dont supply a new access token and we delete the refresh token in the DB.
